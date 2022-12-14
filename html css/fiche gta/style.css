@@ -1,0 +1,56 @@
+body{
+  font-size: 20px;
+  padding: 1%;
+}
+header{
+  background: url("image/gtabandeau.jpg") no-repeat;
+  background-size: cover;
+  height: 300px;
+text-align: center;
+}
+.centre{
+  text-align: center;
+  font-size: 30px;
+}
+
+.titre{
+  color: red;
+  font-size: 40px;
+}
+.haut{
+  font-size: 100px;
+}
+.image1{
+  float: right;
+}
+.image2{
+  float: left;
+}
+ul{
+list-style-position: inside;
+}
+img{
+  width: 30%;
+}
+.icone{
+  width: 50px;
+}
+.marron{
+  background: brown;
+}
+.gris{
+  background: lightgrey;
+}
+section{
+  clear: both;
+  display: table;
+ width: 100%;
+  /* border:solid 2px black; */
+}
+.lien {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px;
+  background: orange;
+color: white;
+}

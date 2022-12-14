@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>formulaire</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="get">
+      <fieldset>
+        <legend>civilité</legend>
+        <div class="">
+          <label for="nom">nom de famille:</label>
+          <input type="text" id="nom" name="nom" value="" required minlength="2" maxlength="25">
+        </div>
+        <div class="">
+          <label for="prenom">prénom:</label>
+          <input type="text" name="prenom" id="prénom" value="" required minlength="2" maxlength="25">
+        </div>
+        <div class="">
+          <label for="email">adresse mail:</label>
+          <input type="email" id="email" name="email" value="" required>
+        </div>
+        <div class="">
+          <label for="datenaissance">date de naissance:</label>
+          <input type="date" id="datenaissance" name="datenaissance" value="">
+        </div>
+        <div class="">
+          <label for="age">âge:</label>
+          <input type="number" id="age" name="âge" min="16" max="99" value="">
+        </div>
+        <div class="">
+          <label for="genre">genre:</label>
+          <input type="radio" id="femme" name="genre" value="femme">
+          <label for="femme">femme</label>
+          <input type="radio" id="homme" name="genre" value="homme">
+          <label for="homme">homme</label>
+          <input type="radio" id="autre" name="genre" value="autre">
+          <label for="autre">autre</label>
+        </div>
+        <div class="">
+          <label for="pays">pays de résidence:</label>
+          <select class="" id="pays" name="pays">
+            <option value="france">france</option>
+            <option value="italie">italie</option>
+            <option value="belgique">belgique</option>
+            <option value="espagne">espagne</option>
+            <option value="allemagne">allemagne</option>
+            <option value="autriche">autriche</option>
+            <option value="luxenbourg">luxenbourg</option>
+            <option value="suisse">suisse</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>vie professionnelle</legend>
+        <div class="">
+          <p>compétence:</p>
+          <label for="accueillant">accueillant</label>
+          <input type="checkbox" id="accueillant" name="compétence" value="accueillant">
+          <label for="ponctuelle">ponctuelle</label>
+          <input type="checkbox" id="ponctuelle" name="compétence" value="ponctuelle">
+          <label for="determiner">determiner</label>
+          <input type="checkbox" id="determiner" name="compétence" value="determiner">
+          <label for="curieux">curieux</label>
+          <input type="checkbox" id="compétence" name="compétence" value="curieux">
+        </div>
+        <div class="">
+          <label for="experience">expérience professionnelle / problème résolu par le passé:</label>
+          <textarea id="experience" name="experience" rows="8" cols="80" maxlength="500"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>mot de passe</legend>
+        <label for="motdepasse">mot de passe(obligatoire):</label>
+        <input type="password" name="motdepasse" id="motdepasse" value="" minlength="8" required> <br>
+      </fieldset>
+      <input type="submit" id="envoyer" name="envoyer" value="envoyer le formulaire">
+    </form>
+  </body>
+</html>

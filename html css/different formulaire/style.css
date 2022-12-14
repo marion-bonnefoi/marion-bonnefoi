@@ -1,0 +1,113 @@
+body{
+  margin: 0;
+}
+section{
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 50px;
+  border-bottom: solid black 5px;
+}
+.connexion, #formnews{
+
+  background: lightgrey;
+}
+.bouton{
+  padding: 25px;
+  border-radius: 50px;
+}
+textarea{
+  width: 100%;
+}
+header{
+  height: 50px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+li{
+  box-sizing: border-box;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+  display: inline-block;
+  width: calc(96%/4);
+  background: lightpink;
+  height: 45px;
+}
+div{
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+img{
+  width: 100%;
+}
+section{
+  background: lightpink;
+}
+.checkbox{
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+legend{
+  font-size: 35px;
+}
+.moitie2{
+  width: 44%;
+  display: inline-block;
+}
+#formcontact input{
+  width: 100%;
+}
+input{
+  display: block;
+  width: 100%;
+  height: 25px;
+}
+@media screen and (min-width: 768px ){
+  img{
+    display: inline-block;
+    width: 49%;
+  }
+  #connexion, #inscription{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+  form{
+    text-align: center;
+
+  }
+  .moitie{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 40%;
+  }
+  li{
+    font-size: 40px;
+
+  }
+  .ligne{
+    display: inline-block;
+    width: 49%;
+  }
+  textarea{
+    width: 50%;
+  }
+  #messages{
+    display: block;
+  }
+  section{
+    box-sizing: border-box;
+    padding: 1%;
+  }
+
+  #formnews, #formcontact{
+    box-sizing: border-box;
+    padding: 1% 10%;
+  }
+  .moitie{
+    display: inline-block;
+    width: 50%;
+  }
+}

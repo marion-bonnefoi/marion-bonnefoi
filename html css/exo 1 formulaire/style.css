@@ -1,0 +1,13 @@
+fieldset{
+  width: 50%;
+  background: lightgrey;
+}
+div{
+  padding: 5px;
+}
+p{
+  display: inline-block;
+}
+#envoyer{
+  padding: 10px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>multiple formulaire</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li> <a href="#formconnexion">Connexion</a></li>
+          <li><a href="#forminscription">Inscription</a></li>
+          <li><a href="#formnews">Newsletter</a></li>
+          <li><a href="#formcontact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="connexion" id="formconnexion">
+        <img src="img/bouquet.jpg" alt="">
+        <form id="connexion" action="index.html" method="post">
+            <legend>Formulaire de connexion</legend>
+            <div class="">
+              <label for="email">Mail :</label>
+              <input type="email" id="email" name="mail" value="" required placeholder="ex: mail@hotmail.fr" minlength="8">
+            </div>
+            <div class="">
+              <label for="motdepasse">Mot de passe :</label>
+              <input type="password" id="motdepasse" name="motdeoasse" value="" required minlength="8" placeholder="**********">
+            </div>
+            <div class="">
+              <label for="souvenirdemoi">Se souvenir de moi</label>
+              <input type="checkbox" class="checkbox" id="souvenirdemoi" name="" value="">
+            </div>
+            <div >
+              <input type="button" id="oublie" name="" value="mot de passe oublié?"  >
+            </div>
+            <div>
+              <input type="button" id="inscrit" name="inscrit" value="pas encore inscrit? clique ici">
+            </div>
+            <div>
+              <input type="submit" class="bouton" name="" value="connexion">
+            </div>
+        </form>
+      </section>
+      <section id="forminscription">
+        <img src="img/corbeille.jpg" alt="">
+        <form id="inscription" action="index.html" method="post">
+          <legend>Formulaire d'inscription</legend>
+          <div class="ligne">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" value="" pattern="[a-z]{2,25}" title="2 à 25 lettres en minuscules" required placeholder="ex: bonnard">
+          </div>
+          <div class="ligne">
+            <label for="prenom">Prenom :</label>
+            <input type="text" id="prenom" name="prenom" value="" pattern="[a-z]{2,25}" title="2 à 25 lettres en minuscules" required placeholder="ex: henri">
+          </div>
+          <div class="">
+            <label for="emailinscription">Mail :</label>
+            <input type="email" id="emailinscription" name="email" value="" required minlength="8" placeholder="ex: mail@hotmail.fr">
+          </div>
+          <div class="">
+            <label for="mdp">Mot de passe :</label>
+            <input type="password" id="mdp" name="" value="" required minlength="8" placeholder="*********">
+          </div>
+          <div class="">
+            <label for="confirmation">Confirmer votre mot de passe :</label>
+            <input type="password" id="confirmation" name="" value="" required minlength="8" placeholder="*********">
+          </div>
+          <div class="">
+            <label for="rgpd">Accord rgpd :</label>
+            <input type="checkbox" class="checkbox" id="rgpd" value="" required>
+          </div>
+          <div class="">
+            <label for="cg">J'accepte les condition générale d'utilisation :</label>
+            <input type="checkbox" class="checkbox" id="cg" value="" required>
+          </div>
+          <input type="submit" class="bouton" value="je m'inscris">
+        </form>
+      </section>
+      <section id="formnews">
+        <form id="newsletter" action="index.html" method="post">
+            <legend>Inscription newsletter</legend>
+            <p>Pour rester informer de toutes nos actualités et pour recevoir tout nos bons plans, inscrivez-vous a notre newsletter</p>
+            <div class="">
+              <label for="accord">J'accepte de recevoir la newsletter</label>
+              <input type="checkbox" class="checkbox" id="accord" name="" value="">
+            </div>
+            <div class="">
+              <label for="email2">Mail :</label>
+              <input type="email" id="email2" name="mail" value="" required minlength="8" placeholder="ex: mail@hotmail.fr">
+            </div>
+            <input type="submit" class="bouton" value="envoyer">
+        </form>
+      </section>
+      <section id="formcontact">
+        <form id="contact" action="index.html" method="post">
+            <legend>Nous contacter</legend>
+            <div class="moitie">
+              <label for="firstname">Nom :</label>
+              <input type="text" id="firstname" name="nom" value="" max="25" pattern="[a-z]{2,25}" title="2 à 25 lettres en minuscules" placeholder="ex: bonnard" required>
+            </div>
+            <div class="moitie">
+              <label for="prenoms">Prenom :</label>
+              <input type="text" id="prenoms" name="prenom" value="" pattern="[a-zA-Z]{2,25}" title="2 à 25 lettres en minuscules" placeholder="ex: henri" required>
+            </div>
+            <div class="moitie">
+              <label for="tel">Télephone :</label>
+              <input type="tel" id="tel" name="telephone" value="" pattern="[0-9]{10}" placeholder="06.00.00.00.00" >
+            </div>
+            <div class="moitie">
+              <label for="sujet">Sujet</label>
+              <select class="" id="sujet" name="" required>
+                <option value="article">Article</option>
+                <option value="inscription">inscription</option>
+                <option value="site inaccessible">Site inaccessible</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="">
+              <label id="messages" for="message">Message :</label>
+              <textarea name="name" id="message" rows="10" maxlength="600" placeholder="ecrivez votre demande (600mots max)" required></textarea>
+            </div>
+            <div class="moitie2">
+              <input type="checkbox" name="" id="RGPD" value="">
+              <label for="RGPD">rgpd</label>
+            </div>
+            <div class="moitie2">
+              <input type="checkbox" id="cgu" name="" value="">
+              <label for="cgu">cgu</label>
+            </div>
+            <input type="submit" class="bouton block" value="envoyer ma demande">
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

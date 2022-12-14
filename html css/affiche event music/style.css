@@ -1,0 +1,32 @@
+body{
+  text-align: center;
+background: url("img/dj.webp") no-repeat;
+background-size: cover;
+}
+main{
+ font-size: 30px;
+ text-transform: uppercase;
+ color: white;
+}
+img{
+  width: 30px;
+}
+h1{
+  font-family:fantasy;
+  font-size: 100px;
+  text-shadow: 2px 4px 10px yellow;
+}
+header{
+  padding: 0% 0% 15%;
+}
+.gras{
+  font-weight: bold;
+}
+.cadre{
+  border: solid 2px black;
+  padding: 2px;
+  display: inline;
+}
+main p{
+  font-size: 15px
+}
